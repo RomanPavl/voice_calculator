@@ -13,6 +13,8 @@ window = tk.Tk()
 window.title('calculator with \N{MICROPHONE}')
 window.geometry("400x400")
 
+
+
 '''Голосовое управление при нажатии на микрофон'''
 def microphone():
     lbl_sign["text"] = "Say"
@@ -230,7 +232,7 @@ check_clear = tk.Checkbutton(text='Очистка ввода',
                                           # при активации - результат в окне ввода обнуляется
 check_clear.grid(row=6, column=3, columnspan=2)
 check_clear.select()  # сразу отмечаем, чтобы меньше вопросов было)
-info_lbl = tk.Label(text='Калькулятор с возможностью\nголосового ввода\n© Roman Paulouski', anchor='center', font='Helvetica 7')
+info_lbl = tk.Label(text='Калькулятор с возможностью\nголосового ввода, version 0.0.1\n© Raman Paulouski', anchor='center', font='Helvetica 7')
 info_lbl.grid(row=6, column=1, columnspan=2)
 logo = tk.PhotoImage(file='calculator_icon.png')
 info_lbl = tk.Label(image=logo, height=37, width=70)
